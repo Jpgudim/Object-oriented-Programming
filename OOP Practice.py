@@ -10,6 +10,9 @@ class employee:
         self.name = name
         self.job = job
         self.salary = salary
+    # adding an instance method
+    def description(self):
+        print("%s is a %s that makes %i dollars a year" % (self.name, self.job, self.salary))
 
 # instantiating a class
 john = employee("John", "accountant", 80000)
@@ -19,6 +22,10 @@ print(john.job)
 print(john.salary)
 print(john.company)
 
+# updating an instance attribute
 john.salary += 10000
 print(john.salary)
+
+# calling an instance method
+john.description()
 
