@@ -13,6 +13,9 @@ class employee:
     # adding an instance method
     def description(self):
         print("%s is a %s that makes %i dollars a year" % (self.name, self.job, self.salary))
+    # testing if an instance method can change an instance attribute
+    def yearlyraise(self):
+        self.salary += 3000
 
 # instantiating a class
 john = employee("John", "accountant", 80000)
@@ -27,5 +30,8 @@ john.salary += 10000
 print(john.salary)
 
 # calling an instance method
+john.description()
+
+john.yearlyraise()
 john.description()
 
