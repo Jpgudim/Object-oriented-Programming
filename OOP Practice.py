@@ -35,3 +35,17 @@ john.description()
 john.yearlyraise()
 john.description()
 
+# working on inheritance
+class boss(employee):
+    def __init__(self, name, job, salary):
+        self.name = name
+        self.job = job
+        self.salary = salary
+
+mark = boss("mark", "manager", 120000)
+
+print(mark.company)
+
+# testing if functions are inherited
+mark.description()
+
