@@ -49,3 +49,10 @@ print(mark.company)
 # testing if functions are inherited
 mark.description()
 
+# working with user input and classes
+new_employee = input("Enter the employee's name: ")
+new_job = input("Enter the new employee's job title: ")
+new_salary = input("Enter the new employee's salary: ")
+new_employee = employee(new_employee, new_job, int(new_salary))
+new_employee.description()
+print(new_employee.company)
